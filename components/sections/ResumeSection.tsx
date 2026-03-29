@@ -181,9 +181,9 @@ function PdfPanel({ isDark }: { isDark: boolean }) {
       {/* ── PDF viewer ── */}
       <div
         className={`rs-pdf-wrap${isDark ? ' rs-pdf-dark' : ''}`}
-        style={{ flex: 1, overflow: 'hidden', position: 'relative' }}
+        style={{ flex: 1, overflow: 'auto', position: 'relative' }}
       >
-<div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
+<div style={{ flex: 1, overflow: 'auto', position: 'relative' }}>
   <Viewer
     fileUrl={RESUME_PDF_URL}
     plugins={[pluginInstance]}

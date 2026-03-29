@@ -229,7 +229,7 @@ const PdfModal: React.FC<PdfModalProps> = ({ isOpen, onClose, pdfUrl, fileName }
                   style={{
                     height: '100%',
                     width: '100%',
-                    overflow: 'hidden',
+                    overflow: 'auto',
                     position: 'relative',
                   }}
                   className="
@@ -246,7 +246,7 @@ const PdfModal: React.FC<PdfModalProps> = ({ isOpen, onClose, pdfUrl, fileName }
                   "
                 >
 
-                  <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
+                  <div style={{ flex: 1, overflow: 'auto', position: 'relative' }}>
                     <Viewer
                       fileUrl={pdfUrl}
                       plugins={[defaultLayoutPluginInstance]}
