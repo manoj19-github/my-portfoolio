@@ -1,12 +1,7 @@
 import { connectDB } from '@/lib/mongoclient';
+import { Skill } from '@/models/skill.models';
 
-export type Skill = {
-  _id: string;
-  name: string;
-  category: string;
-  proficiency: number;
-  display_order: number;
-};
+
 
 export async function getSkills(): Promise<Skill[]> {
   try {

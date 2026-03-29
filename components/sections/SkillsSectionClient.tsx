@@ -4,14 +4,9 @@ import { motion, useInView } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useRef } from 'react';
+import { Skill } from '@/models/skill.models';
 
-export type Skill = {
-  _id: string;
-  name: string;
-  category: string;
-  proficiency: number;
-  display_order: number;
-};
+
 
 export default function SkillsSectionClient({
   skills,

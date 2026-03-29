@@ -57,9 +57,9 @@ export function AboutSection() {
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
             I am a skilled Software Developer at{' '}
-            <span className="text-blue-600 font-semibold">
+            <a href="https://www.msqube.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold">
               MSQUBE Technology Solutions PVT LTD
-            </span>{' '}
+            </a>{' '}
             with nearly four years of experience in the MERN stack domain.
             I specialize in building efficient, scalable, and user-friendly web
             and mobile applications using modern technologies.
@@ -99,9 +99,14 @@ export function AboutSection() {
               <p className="text-lg font-semibold text-blue-600">
                 Senior Software Developer
               </p>
-              <p className="text-muted-foreground">
+              <a
+                href="https://www.msqube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground !cursor-pointer hover:text-blue-600 transition-colors"
+              >
                 MSQUBE Technology Solutions PVT LTD
-              </p>
+              </a>
               <p className="text-sm text-muted-foreground">
                 Feb 2023 - Present
               </p>

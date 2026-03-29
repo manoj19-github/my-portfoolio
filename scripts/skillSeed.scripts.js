@@ -2,7 +2,7 @@ require('dotenv').config();
 const { MongoClient, ObjectId } = require('mongodb');
 
 const uri = process.env.DATABASE_URL;
-
+console.log('Using DATABASE_URL:', uri);
 if (!uri) {
   console.error('❌ DATABASE_URL is not defined in .env');
   process.exit(1);
@@ -23,6 +23,7 @@ const skills = [
   { name: 'PHP',          category: 'Languages', proficiency: 75, display_order: 12 },
   { name: 'MongoDB',      category: 'Database',  proficiency: 87, display_order: 13 },
   { name: 'MySQL',        category: 'Database',  proficiency: 82, display_order: 14 },
+  { name: 'PostgreSql',   category: 'Database',  proficiency: 90, display_order: 16 },
   { name: 'Git',          category: 'Tools',     proficiency: 90, display_order: 15 },
 ];
 
