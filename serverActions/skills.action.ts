@@ -22,7 +22,7 @@ export async function getSkills(): Promise<Skill[]> {
       display_order: skill.display_order,
     }));
 
-    console.log('skills:', formatted);
+    
 
     return formatted;
   } catch (error) {
